@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">BibleApp</string>
+    <string name="title_activity_main">BibleApp</string>
+    <string name="package_name">com.bibleapp.app</string>
+    <string name="custom_url_scheme">com.bibleapp.app</string>
+</resources>

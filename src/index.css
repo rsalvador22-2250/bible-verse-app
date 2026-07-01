@@ -1,0 +1,97 @@
+/* Reset at global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  background-color: #f5f0eb;
+  color: #2c3e50;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f0eb;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8b6b4f;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6d4f3a;
+}
+
+/* Dark mode scrollbar */
+body.dark-mode::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background: #6d4f3a;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: #8b6b4f;
+}
+
+/* Root element */
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Selection color */
+::selection {
+  background: #8b6b4f;
+  color: white;
+}
+
+/* Links */
+a {
+  color: #8b6b4f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #6d4f3a;
+  text-decoration: underline;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+}
